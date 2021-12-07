@@ -99,7 +99,7 @@ def predict_stock():
     poly_svr.fit(days, adj_close_prices)
 
     #Create and train a SVR model using a rbf kernel
-    rbf_svr = SVR(kernel= 'rbf', C=1000.0, gamma=0.15)
+    rbf_svr = SVR(kernel= 'rbf', C=1000.0, gamma=0.85)
     rbf_svr.fit(days, adj_close_prices)
 
     #charts
