@@ -57,7 +57,7 @@ def get_data_web(symbol):
 def get_data_csv(symbol):
     """Get data of the company's code from the files.csv"""
     if symbol  == choice:
-        df      = pd.read_csv(f"{choice}.csv")
+        df      = pd.read_csv(f"https://raw.githubusercontent.com/phamvanhong/Web/main/csv%20file/{choice}.csv")
         return df
 
 def draw_chart():
